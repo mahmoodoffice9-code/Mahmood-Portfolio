@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahmood Rafiq | Web Apps & AI Solutions</title>
+    <title>Mahmood Rafiq — Full-Stack Web Developer & AI Specialist</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,207 +12,180 @@
             theme: {
                 extend: {
                     colors: {
-                        darkBg: '#0b0f19',
-                        cardBg: '#131b2e',
+                        darkBg: '#090d16',
+                        cardBg: '#111827',
+                        borderCol: '#1f293d',
                         accentBlue: '#3b82f6',
-                        accentPurple: '#8b5cf6',
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-accentBlue selection:text-white">
+<body class="bg-darkBg text-gray-200 font-sans antialiased selection:bg-accentBlue selection:text-white">
 
     <!-- Header / Navbar -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold bg-gradient-to-r from-accentBlue to-accentPurple bg-clip-text text-transparent">
-                Mahmood.dev ⚡
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-borderCol">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-accentBlue"></span> Mahmood Rafiq
             </a>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                <a href="#about" class="hover:text-accentBlue transition">About</a>
-                <a href="#services" class="hover:text-accentBlue transition">Services</a>
-                <a href="#projects" class="hover:text-accentBlue transition">Projects</a>
-                <a href="#contact" class="hover:text-accentBlue transition">Contact</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
             </nav>
-            <a href="#contact" class="px-4 py-2 text-sm font-medium bg-gradient-to-r from-accentBlue to-accentPurple rounded-lg text-white hover:opacity-90 transition shadow-lg shadow-blue-500/20">
-                Let's Talk
+            <a href="#contact" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accentBlue text-white rounded-lg hover:bg-blue-600 transition shadow-lg shadow-blue-500/20">
+                Get in Touch
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 md:pt-44 md:pb-32 px-6 relative overflow-hidden">
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-accentBlue/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-accentBlue border border-blue-500/20 mb-6">
-                <span class="w-2 h-2 rounded-full bg-accentBlue animate-pulse"></span> Available for Projects
-            </span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-                Lightning-Fast Web Apps & <span class="bg-gradient-to-r from-accentBlue to-accentPurple bg-clip-text text-transparent">AI-Integrated Solutions</span> for Modern Businesses
-            </h1>
-            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                I help businesses scale with custom, high-performance web applications, seamless AI prompt integration, and lightning-fast cloud delivery. Built for speed, designed for conversions.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#projects" class="w-full sm:w-auto px-8 py-3 rounded-xl font-medium bg-gradient-to-r from-accentBlue to-accentPurple text-white hover:opacity-95 transition shadow-lg shadow-blue-500/25">
-                    View My Work 🚀
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-3 rounded-xl font-medium bg-cardBg border border-gray-700 hover:border-gray-500 transition">
-                    Let's Talk 💬
-                </a>
-            </div>
+    <section class="pt-36 pb-20 px-6 max-w-5xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-accentBlue border border-blue-500/20 mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-accentBlue animate-pulse"></span> Available for Freelance Projects
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+            Lightning-Fast Web Apps & AI-Integrated Solutions for Modern Businesses
+        </h1>
+        <p class="text-lg text-gray-400 mb-10 max-w-3xl leading-relaxed">
+            I help businesses scale with custom, high-performance web applications, seamless AI prompt integration, and lightning-fast cloud delivery. Built for speed, designed for conversions.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+            <a href="#projects" class="px-6 py-3 rounded-xl text-sm font-semibold bg-accentBlue text-white hover:bg-blue-600 transition shadow-lg shadow-blue-500/20">
+                View My Work 🚀
+            </a>
+            <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cardBg border border-borderCol hover:border-gray-500 text-gray-300 transition">
+                Let's Talk 💬
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-6 border-t border-gray-800/60 bg-darkBg/50">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-3">Engineering High-Speed Digital Experiences</h2>
-                <p class="text-gray-400">Who I Am</p>
+    <section id="about" class="py-20 px-6 border-t border-borderCol max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-10 items-start">
+            <div>
+                <h2 class="text-xl font-bold text-white mb-2">Who I Am</h2>
+                <p class="text-xs text-gray-400">Engineering High-Speed Digital Experiences</p>
             </div>
-            <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 leading-relaxed text-gray-300 space-y-4">
+            <div class="md:col-span-2 text-gray-300 space-y-4 text-sm leading-relaxed">
                 <p>
                     I'm a Full-Stack Web Developer and AI Specialist focused on building modern, high-speed digital products without the bloat. Utilizing a streamlined cloud-first workflow (GitHub, Vercel, Supabase), I turn concepts into fully functional, production-ready web apps in record time.
                 </p>
                 <p>
-                    Whether you need a sleek agency portal, an interactive trading interface, or smart AI integration, I deliver clean code that drives real business results. 💻✨
+                    Whether you need a sleek agency portal, an interactive trading interface, or smart AI integration, I deliver clean code that drives real business results.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 px-6 border-t border-gray-800/60">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-3">What I Bring to the Table</h2>
-                <p class="text-gray-400">Core Services & Expertise</p>
+    <section id="services" class="py-20 px-6 border-t border-borderCol max-w-5xl mx-auto">
+        <div class="mb-12">
+            <h2 class="text-xl font-bold text-white mb-2">What I Bring to the Table</h2>
+            <p class="text-xs text-gray-400">Core Services & Expertise</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-accentBlue/40 transition">
+                <div class="text-accentBlue text-lg mb-4"><i class="fa-solid fa-code"></i></div>
+                <h3 class="text-base font-semibold text-white mb-2">Full-Stack Web Development</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Building responsive, lightning-fast web apps, landing pages, and custom interfaces using modern HTML/CSS/JavaScript and Vercel cloud deployment.
+                </p>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Service 1 -->
-                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accentBlue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-accentBlue text-xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Full-Stack Web Development</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Building responsive, lightning-fast web apps, landing pages, and custom interfaces using modern HTML/CSS/JavaScript and Vercel cloud deployment.
-                    </p>
-                </div>
-                <!-- Service 2 -->
-                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accentPurple/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-accentPurple text-xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">AI Prompt Engineering & LLM Integration</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Integrating smart AI workflows, automated prompts, and intelligent conversational layers into your web products.
-                    </p>
-                </div>
-                <!-- Service 3 -->
-                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accentBlue/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-accentBlue text-xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Database & Backend Architecture</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Setting up secure, scalable, and real-time data backends using Supabase for smooth app performance.
-                    </p>
-                </div>
-                <!-- Service 4 -->
-                <div class="p-8 rounded-2xl bg-cardBg border border-gray-800 hover:border-accentPurple/50 transition group">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-accentPurple text-xl mb-6 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">High-Speed Execution & Delivery</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Rapid development turnaround with zero compromise on quality, helping businesses launch their digital footprint instantly.
-                    </p>
-                </div>
+            <div class="p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-accentBlue/40 transition">
+                <div class="text-accentBlue text-lg mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3 class="text-base font-semibold text-white mb-2">AI Prompt Engineering & LLM Integration</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Integrating smart AI workflows, automated prompts, and intelligent conversational layers into your web products.
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-accentBlue/40 transition">
+                <div class="text-accentBlue text-lg mb-4"><i class="fa-solid fa-database"></i></div>
+                <h3 class="text-base font-semibold text-white mb-2">Database & Backend Architecture</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Setting up secure, scalable, and real-time data backends using Supabase for smooth app performance.
+                </p>
+            </div>
+            <div class="p-6 rounded-2xl bg-cardBg border border-borderCol hover:border-accentBlue/40 transition">
+                <div class="text-accentBlue text-lg mb-4"><i class="fa-solid fa-bolt"></i></div>
+                <h3 class="text-base font-semibold text-white mb-2">High-Speed Execution & Delivery</h3>
+                <p class="text-gray-400 text-xs leading-relaxed">
+                    Rapid development turnaround with zero compromise on quality, helping businesses launch their digital footprint instantly.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6 border-t border-gray-800/60 bg-darkBg/50">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-3">Recent Live Projects</h2>
-                <p class="text-gray-400">Featured Portfolio Projects</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="rounded-2xl bg-cardBg border border-gray-800 overflow-hidden flex flex-col justify-between hover:border-accentBlue/50 transition">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-accentBlue">Agency Web App</span>
-                            <i class="fa-brands fa-github text-lg text-gray-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Agency Web App & Portfolio</h3>
-                        <p class="text-gray-400 text-sm mb-6">
-                            A modern, high-converting agency landing page equipped with smooth UI design and live communication support.
-                        </p>
-                    </div>
-                    <div class="px-8 py-4 bg-darkBg/40 border-t border-gray-800 flex items-center justify-between text-xs text-gray-400">
-                        <span>Vercel • Tailwind • Live Chat</span>
-                        <a href="https://agencymi.vercel.app/" target="_blank" class="text-accentBlue hover:underline flex items-center gap-1">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
-                    </div>
+    <section id="projects" class="py-20 px-6 border-t border-borderCol max-w-5xl mx-auto">
+        <div class="mb-12">
+            <h2 class="text-xl font-bold text-white mb-2">Featured Portfolio Projects</h2>
+            <p class="text-xs text-gray-400">Recent Live Projects</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Project 1 -->
+            <div class="rounded-2xl bg-cardBg border border-borderCol overflow-hidden flex flex-col justify-between hover:border-accentBlue/40 transition">
+                <div class="p-6">
+                    <span class="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-500/10 text-accentBlue mb-4 inline-block">Agency Web App</span>
+                    <h3 class="text-base font-semibold text-white mb-2">Agency Web App & Portfolio</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        A modern, high-converting agency landing page equipped with smooth UI design and live communication support.
+                    </p>
                 </div>
-                <!-- Project 2 -->
-                <div class="rounded-2xl bg-cardBg border border-gray-800 overflow-hidden flex flex-col justify-between hover:border-accentPurple/50 transition">
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-accentPurple">FinTech UI</span>
-                            <i class="fa-brands fa-github text-lg text-gray-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Rogue Markets - Financial Trading UI</h3>
-                        <p class="text-gray-400 text-sm mb-6">
-                            A sleek, custom-styled financial trading platform interface featuring real-time data layouts and advanced UI components.
-                        </p>
-                    </div>
-                    <div class="px-8 py-4 bg-darkBg/40 border-t border-gray-800 flex items-center justify-between text-xs text-gray-400">
-                        <span>HTML/CSS • Custom UI • Vercel</span>
-                        <a href="https://rogue-market-wrfb.vercel.app/" target="_blank" class="text-accentBlue hover:underline flex items-center gap-1">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i></a>
-                    </div>
+                <div class="px-6 py-3 bg-darkBg/50 border-t border-borderCol flex items-center justify-between text-xs text-gray-400">
+                    <span>Vercel • Tailwind</span>
+                    <a href="https://agencymi.vercel.app/" target="_blank" class="text-accentBlue hover:underline flex items-center gap-1 font-medium">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="rounded-2xl bg-cardBg border border-borderCol overflow-hidden flex flex-col justify-between hover:border-accentBlue/40 transition">
+                <div class="p-6">
+                    <span class="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 mb-4 inline-block">FinTech UI</span>
+                    <h3 class="text-base font-semibold text-white mb-2">Rogue Markets - Financial Trading UI</h3>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                        A sleek, custom-styled financial trading platform interface featuring real-time data layouts and advanced UI components.
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-darkBg/50 border-t border-borderCol flex items-center justify-between text-xs text-gray-400">
+                    <span>HTML/CSS • Vercel</span>
+                    <a href="https://rogue-market-wrfb.vercel.app/" target="_blank" class="text-accentBlue hover:underline flex items-center gap-1 font-medium">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-6 border-t border-gray-800/60">
-        <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-3">Let's Build Something Great Together</h2>
-                <p class="text-gray-400">Ready to upgrade your digital presence or integrate smart AI solutions into your business? Let's connect and make it happen.</p>
-            </div>
-            <form class="p-8 rounded-2xl bg-cardBg border border-gray-800 space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-xs font-medium text-gray-400 mb-2">Your Name</label>
-                        <input type="text" required class="w-full px-4 py-3 rounded-xl bg-darkBg border border-gray-800 text-gray-100 focus:border-accentBlue focus:outline-none transition">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-medium text-gray-400 mb-2">Your Email</label>
-                        <input type="email" required class="w-full px-4 py-3 rounded-xl bg-darkBg border border-gray-800 text-gray-100 focus:border-accentBlue focus:outline-none transition">
-                    </div>
+    <section id="contact" class="py-20 px-6 border-t border-borderCol max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-bold text-white mb-2">Let's Build Something Great Together</h2>
+            <p class="text-xs text-gray-400">Ready to upgrade your digital presence or integrate smart AI solutions into your business? Let's connect and make it happen.</p>
+        </div>
+        <form class="p-6 rounded-2xl bg-cardBg border border-borderCol space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-[11px] font-medium text-gray-400 mb-1">Your Name</label>
+                    <input type="text" required class="w-full px-3 py-2.5 rounded-xl bg-darkBg border border-borderCol text-xs text-white focus:border-accentBlue focus:outline-none transition">
                 </div>
                 <div>
-                    <label class="block text-xs font-medium text-gray-400 mb-2">Message</label>
-                    <textarea rows="4" required class="w-full px-4 py-3 rounded-xl bg-darkBg border border-gray-800 text-gray-100 focus:border-accentBlue focus:outline-none transition"></textarea>
+                    <label class="block text-[11px] font-medium text-gray-400 mb-1">Your Email</label>
+                    <input type="email" required class="w-full px-3 py-2.5 rounded-xl bg-darkBg border border-borderCol text-xs text-white focus:border-accentBlue focus:outline-none transition">
                 </div>
-                <button type="submit" class="w-full py-3 rounded-xl font-medium bg-gradient-to-r from-accentBlue to-accentPurple text-white hover:opacity-95 transition shadow-lg shadow-blue-500/20">
-                    Send Message ⚡
-                </button>
-            </form>
-        </div>
+            </div>
+            <div>
+                <label class="block text-[11px] font-medium text-gray-400 mb-1">Message</label>
+                <textarea rows="4" required class="w-full px-3 py-2.5 rounded-xl bg-darkBg border border-borderCol text-xs text-white focus:border-accentBlue focus:outline-none transition"></textarea>
+            </div>
+            <button type="submit" class="w-full py-3 rounded-xl text-xs font-semibold uppercase tracking-wider bg-accentBlue text-white hover:bg-blue-600 transition shadow-lg shadow-blue-500/20">
+                Send Message ⚡
+            </button>
+        </form>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-gray-800/60 text-center text-xs text-gray-500 bg-darkBg/50">
+    <footer class="py-8 px-6 border-t border-borderCol text-center text-xs text-gray-500">
         <p>© 2026 Mahmood Rafiq. Built with cloud-first workflow on GitHub & Vercel. 🚀</p>
     </footer>
 
