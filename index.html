@@ -44,44 +44,42 @@
         </div>
     </header>
 
-    <!-- Hero Section: Top Full-Width Content -->
-    <section class="pt-36 pb-16 px-6 max-w-6xl mx-auto text-left">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-royalBlue border border-blue-200 mb-6">
-            <span class="w-1.5 h-1.5 rounded-full bg-royalBlue animate-pulse"></span> Available for Projects
-        </div>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-royalBlue mb-6 leading-[1.15] max-w-4xl">
-            Lightning-Fast Web Apps & AI-Integrated Solutions
-        </h1>
-        <p class="text-base text-textMuted leading-relaxed mb-8 max-w-3xl">
-            I help businesses scale with custom, high-performance web applications, seamless AI prompt integration, and lightning-fast cloud delivery. Built for speed, designed for conversions.
-        </p>
-        <div class="flex flex-wrap items-center gap-4">
-            <a href="#projects" class="px-6 py-3 rounded-xl text-sm font-semibold bg-royalBlue text-white hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
-                View My Work 🚀
-            </a>
-            <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cardLight border border-borderCol hover:border-royalBlue text-textDark transition">
-                Let's Talk 💬
-            </a>
-        </div>
-    </section>
+    <!-- Hero Section with Larger Profile Picture & Double-Layered Background Pages -->
+    <section class="pt-36 pb-24 px-6 max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Info Content -->
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-royalBlue border border-blue-200 mb-6">
+                    <span class="w-1.5 h-1.5 rounded-full bg-royalBlue animate-pulse"></span> Available for Projects
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-royalBlue mb-6 leading-[1.15]">
+                    Lightning-Fast Web Apps & AI-Integrated Solutions
+                </h1>
+                <p class="text-base text-textMuted leading-relaxed mb-8">
+                    I help businesses scale with custom, high-performance web applications, seamless AI prompt integration, and lightning-fast cloud delivery. Built for speed, designed for conversions.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl text-sm font-semibold bg-royalBlue text-white hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
+                        View My Work 🚀
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cardLight border border-borderCol hover:border-royalBlue text-textDark transition">
+                        Let's Talk 💬
+                    </a>
+                </div>
+            </div>
 
-    <!-- Profile & About Section Grid -->
-    <section id="about" class="py-12 px-6 max-w-6xl mx-auto">
-        <div class="grid lg:grid-cols-12 gap-10 items-start">
-            
-            <!-- Left Side: Profile Picture with Double-Layered Background Pages & Name -->
-            <div class="lg:col-span-4 relative flex justify-center py-6">
+            <!-- Right Side: Larger Profile Picture with Double-Layered Background Pages -->
+            <div class="lg:col-span-5 relative flex justify-center py-6">
                 <!-- Background Layer 2 (Back Page) -->
-                <div class="absolute top-0 right-4 w-72 h-88 bg-blue-100/70 border border-blue-200 rounded-3xl transform rotate-6 scale-95 pointer-events-none shadow-sm"></div>
+                <div class="absolute top-0 right-4 w-80 h-96 bg-blue-100/70 border border-blue-200 rounded-3xl transform rotate-6 scale-95 pointer-events-none shadow-sm"></div>
                 
                 <!-- Background Layer 1 (Middle Page) -->
-                <div class="absolute top-3 right-0 w-72 h-88 bg-cardLight border border-borderCol rounded-3xl transform rotate-3 scale-[0.98] pointer-events-none shadow-md"></div>
+                <div class="absolute top-3 right-0 w-80 h-96 bg-cardLight border border-borderCol rounded-3xl transform rotate-3 scale-[0.98] pointer-events-none shadow-md"></div>
                 
-                <!-- Foreground Main Card containing the Profile Picture & Name -->
-                <div class="relative z-10 bg-bgWhite border border-borderCol rounded-3xl p-6 shadow-xl w-72 text-center backdrop-blur-md">
+                <!-- Foreground Main Card containing the Larger Profile Picture -->
+                <div class="relative z-10 bg-bgWhite border border-borderCol rounded-3xl p-6 shadow-2xl w-80 text-center backdrop-blur-md">
                     <div class="mb-4 relative inline-block">
-                        <!-- Yahan apni picture ka direct link ya agar github par rakhi hai toh ./profile.jpg likh sakte ho -->
-                        <img src="https://kommodo.ai/i/pHe6BBJXk8J4S3wz4gAY" alt="Mahmood Rafiq" class="w-40 h-40 rounded-2xl object-cover shadow-xl border-2 border-royalBlue/30 mx-auto">
+                        <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/yhfhao0lb886yorharjg" alt="Mahmood Rafiq" class="w-48 h-48 rounded-2xl object-cover shadow-xl border-2 border-royalBlue/30 mx-auto">
                         <span class="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
                     </div>
                     <h3 class="font-bold text-textDark text-lg mb-1">Mahmood Rafiq</h3>
@@ -99,23 +97,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Right Side: Who I Am Section -->
-            <div class="lg:col-span-8 bg-cardLight border border-borderCol rounded-3xl p-8 shadow-sm">
-                <div class="mb-6">
-                    <h2 class="text-2xl font-bold text-royalBlue mb-1">Who I Am</h2>
-                    <p class="text-xs text-textMuted">Engineering High-Speed Digital Experiences</p>
-                </div>
-                <div class="text-textMuted space-y-4 text-sm leading-relaxed">
-                    <p>
-                        I'm a Full-Stack Web Developer and AI Specialist focused on building modern, high-speed digital products without the bloat. Utilizing a streamlined cloud-first workflow (GitHub, Vercel, Supabase), I turn concepts into fully functional, production-ready web apps in record time.
-                    </p>
-                    <p>
-                        Whether you need a sleek agency portal, an interactive trading interface, or smart AI integration, I deliver clean code that drives real business results.
-                    </p>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 border-t border-borderCol max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-10 items-start">
+            <div>
+                <h2 class="text-xl font-bold text-royalBlue mb-2">Who I Am</h2>
+                <p class="text-xs text-textMuted">Engineering High-Speed Digital Experiences</p>
             </div>
-
+            <div class="md:col-span-2 text-textMuted space-y-4 text-sm leading-relaxed">
+                <p>
+                    I'm a Full-Stack Web Developer and AI Specialist focused on building modern, high-speed digital products without the bloat. Utilizing a streamlined cloud-first workflow (GitHub, Vercel, Supabase), I turn concepts into fully functional, production-ready web apps in record time.
+                </p>
+                <p>
+                    Whether you need a sleek agency portal, an interactive trading interface, or smart AI integration, I deliver clean code that drives real business results.
+                </p>
+            </div>
         </div>
     </section>
 
