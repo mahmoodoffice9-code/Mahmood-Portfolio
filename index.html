@@ -13,7 +13,6 @@
                 extend: {
                     colors: {
                         bgWhite: '#ffffff',
-                        cardLight: '#f8fafc',
                         borderCol: '#e2e8f0',
                         royalBlue: '#2563eb',
                         textDark: '#0f172a',
@@ -59,58 +58,41 @@
             <a href="#projects" class="px-6 py-3 rounded-xl text-sm font-semibold bg-royalBlue text-white hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
                 View My Work 🚀
             </a>
-            <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cardLight border border-borderCol hover:border-royalBlue text-textDark transition">
+            <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-white border border-borderCol hover:border-royalBlue text-textDark transition">
                 Let's Talk 💬
             </a>
         </div>
     </section>
 
-    <!-- Profile & About Section Grid -->
+    <!-- Profile & About Section Grid (No Boxes, Clean Layout) -->
     <section id="about" class="py-12 px-6 max-w-6xl mx-auto">
         <div class="grid lg:grid-cols-12 gap-10 items-start">
             
-            <!-- Left Side: Profile Picture with Double-Layered Background Pages & Name -->
-            <div class="lg:col-span-4 relative flex justify-center py-6">
-                <!-- Background Layer 2 (Back Page) -->
-                <div class="absolute top-0 right-4 w-72 h-88 bg-blue-100/70 border border-blue-200 rounded-3xl transform rotate-6 scale-95 pointer-events-none shadow-sm"></div>
-                
-                <!-- Background Layer 1 (Middle Page) -->
-                <div class="absolute top-3 right-0 w-72 h-88 bg-cardLight border border-borderCol rounded-3xl transform rotate-3 scale-[0.98] pointer-events-none shadow-md"></div>
-                
-                <!-- Foreground Main Card containing the Profile Picture & Name -->
-                <div class="relative z-10 bg-bgWhite border border-borderCol rounded-3xl p-6 shadow-xl w-72 text-center backdrop-blur-md">
-                    <div class="mb-4 relative inline-block">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFdpak7E0zyPA/profile-displayphoto-scale_400_400/B4DZ9xwynYJAAg-/0/1784320045491?e=1791417600&v=beta&t=-5rFL4dbFhZgRky9dHCLfO3Wezb9rqNpPNCdLhI9MrY" alt="Mahmood Rafiq" class="w-40 h-40 rounded-2xl object-cover shadow-xl border-2 border-royalBlue/30 mx-auto">
-                        <span class="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
-                    </div>
-                    <h3 class="font-bold text-textDark text-lg mb-1">Mahmood Rafiq</h3>
-                    <p class="text-xs text-royalBlue font-medium mb-4">Full-Stack & AI Specialist</p>
-                    <div class="pt-3 border-t border-borderCol flex justify-around text-xs text-textMuted">
-                        <div>
-                            <span class="block font-bold text-textDark">GitHub</span>
-                            <span>Cloud</span>
-                        </div>
-                        <div class="border-r border-borderCol"></div>
-                        <div>
-                            <span class="block font-bold text-textDark">Vercel</span>
-                            <span>Deployed</span>
-                        </div>
-                    </div>
+            <!-- Left Side: Profile Picture & Name (No Box) -->
+            <div class="lg:col-span-4 flex flex-col items-start py-2">
+                <div class="mb-4 relative inline-block">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFdpak7E0zyPA/profile-displayphoto-scale_400_400/B4DZ9xwynYJAAg-/0/1784320045491?e=1791417600&v=beta&t=-5rFL4dbFhZgRky9dHCLfO3Wezb9rqNpPNCdLhI9MrY" alt="Mahmood Rafiq" class="w-44 h-44 rounded-2xl object-cover shadow-lg border-2 border-royalBlue/20">
+                    <span class="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
+                </div>
+                <h3 class="font-extrabold text-textDark text-xl mb-1">Mahmood Rafiq</h3>
+                <p class="text-xs text-royalBlue font-semibold uppercase tracking-wider mb-3">Full-Stack & AI Specialist</p>
+                <div class="flex items-center gap-4 text-xs text-textMuted font-medium">
+                    <span><strong class="text-textDark">GitHub</strong> Cloud</span>
+                    <span>•</span>
+                    <span><strong class="text-textDark">Vercel</strong> Deployed</span>
                 </div>
             </div>
 
-            <!-- Right Side: Who I Am Section with Institutional Style Heading -->
-            <div class="lg:col-span-8 bg-cardLight border border-borderCol rounded-3xl p-8 shadow-sm">
+            <!-- Right Side: Who I Am Section (No Box, Big Institutional Heading) -->
+            <div class="lg:col-span-8 pt-2">
                 <div class="mb-6 pb-4 border-b border-borderCol">
                     <div class="flex items-center gap-3">
-                        <span class="w-10 h-10 rounded-xl bg-blue-100 text-royalBlue flex items-center justify-center font-bold text-lg shadow-sm">
-                            <i class="fa-solid fa-user-graduate"></i>
-                        </span>
+                        <span class="text-royalBlue text-2xl"><i class="fa-solid fa-graduation-cap"></i></span>
                         <div>
                             <h2 class="text-3xl md:text-4xl font-black tracking-tight bg-gradient-to-r from-royalBlue to-indigo-600 bg-clip-text text-transparent">
                                 Who I Am
                             </h2>
-                            <p class="text-xs font-semibold uppercase tracking-wider text-textMuted mt-0.5">Engineering High-Speed Digital Experiences</p>
+                            <p class="text-xs font-semibold uppercase tracking-widest text-textMuted mt-1">Engineering High-Speed Digital Experiences</p>
                         </div>
                     </div>
                 </div>
@@ -134,28 +116,28 @@
             <p class="text-xs text-textMuted">Core Services & Expertise</p>
         </div>
         <div class="grid md:grid-cols-2 gap-6">
-            <div class="p-6 rounded-2xl bg-cardLight border border-borderCol hover:border-royalBlue/50 transition shadow-sm">
+            <div class="p-6 rounded-2xl bg-[#f8fafc] border border-borderCol hover:border-royalBlue/50 transition">
                 <div class="text-royalBlue text-lg mb-4"><i class="fa-solid fa-code"></i></div>
                 <h3 class="text-base font-semibold text-textDark mb-2">Full-Stack Web Development</h3>
                 <p class="text-textMuted text-xs leading-relaxed">
                     Building responsive, lightning-fast web apps, landing pages, and custom interfaces using modern HTML/CSS/JavaScript and Vercel cloud deployment.
                 </p>
             </div>
-            <div class="p-6 rounded-2xl bg-cardLight border border-borderCol hover:border-royalBlue/50 transition shadow-sm">
+            <div class="p-6 rounded-2xl bg-[#f8fafc] border border-borderCol hover:border-royalBlue/50 transition">
                 <div class="text-royalBlue text-lg mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
                 <h3 class="text-base font-semibold text-textDark mb-2">AI Prompt Engineering & LLM Integration</h3>
                 <p class="text-textMuted text-xs leading-relaxed">
                     Integrating smart AI workflows, automated prompts, and intelligent conversational layers into your web products.
                 </p>
             </div>
-            <div class="p-6 rounded-2xl bg-cardLight border border-borderCol hover:border-royalBlue/50 transition shadow-sm">
+            <div class="p-6 rounded-2xl bg-[#f8fafc] border border-borderCol hover:border-royalBlue/50 transition">
                 <div class="text-royalBlue text-lg mb-4"><i class="fa-solid fa-database"></i></div>
                 <h3 class="text-base font-semibold text-textDark mb-2">Database & Backend Architecture</h3>
                 <p class="text-textMuted text-xs leading-relaxed">
                     Setting up secure, scalable, and real-time data backends using Supabase for smooth app performance.
                 </p>
             </div>
-            <div class="p-6 rounded-2xl bg-cardLight border border-borderCol hover:border-royalBlue/50 transition shadow-sm">
+            <div class="p-6 rounded-2xl bg-[#f8fafc] border border-borderCol hover:border-royalBlue/50 transition">
                 <div class="text-royalBlue text-lg mb-4"><i class="fa-solid fa-bolt"></i></div>
                 <h3 class="text-base font-semibold text-textDark mb-2">High-Speed Execution & Delivery</h3>
                 <p class="text-textMuted text-xs leading-relaxed">
@@ -173,7 +155,7 @@
         </div>
         <div class="grid md:grid-cols-2 gap-6">
             <!-- Project 1 -->
-            <div class="rounded-2xl bg-cardLight border border-borderCol overflow-hidden flex flex-col justify-between hover:border-royalBlue/50 transition shadow-sm">
+            <div class="rounded-2xl bg-[#f8fafc] border border-borderCol overflow-hidden flex flex-col justify-between hover:border-royalBlue/50 transition">
                 <div class="p-6">
                     <span class="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-100 text-royalBlue mb-4 inline-block">Agency Web App</span>
                     <h3 class="text-base font-semibold text-textDark mb-2">Agency Web App & Portfolio</h3>
@@ -181,13 +163,13 @@
                         A modern, high-converting agency landing page equipped with smooth UI design and live communication support.
                     </p>
                 </div>
-                <div class="px-6 py-3 bg-bgWhite border-t border-borderCol flex items-center justify-between text-xs text-textMuted">
+                <div class="px-6 py-3 bg-white border-t border-borderCol flex items-center justify-between text-xs text-textMuted">
                     <span>Vercel • Tailwind</span>
                     <a href="https://agencymi.vercel.app/" target="_blank" class="text-royalBlue hover:underline flex items-center gap-1 font-medium">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a>
                 </div>
             </div>
             <!-- Project 2 -->
-            <div class="rounded-2xl bg-cardLight border border-borderCol overflow-hidden flex flex-col justify-between hover:border-royalBlue/50 transition shadow-sm">
+            <div class="rounded-2xl bg-[#f8fafc] border border-borderCol overflow-hidden flex flex-col justify-between hover:border-royalBlue/50 transition">
                 <div class="p-6">
                     <span class="text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md bg-purple-100 text-purple-700 mb-4 inline-block">FinTech UI</span>
                     <h3 class="text-base font-semibold text-textDark mb-2">Rogue Markets - Financial Trading UI</h3>
@@ -195,7 +177,7 @@
                         A sleek, custom-styled financial trading platform interface featuring real-time data layouts and advanced UI components.
                     </p>
                 </div>
-                <div class="px-6 py-3 bg-bgWhite border-t border-borderCol flex items-center justify-between text-xs text-textMuted">
+                <div class="px-6 py-3 bg-white border-t border-borderCol flex items-center justify-between text-xs text-textMuted">
                     <span>HTML/CSS • Vercel</span>
                     <a href="https://rogue-market-wrfb.vercel.app/" target="_blank" class="text-royalBlue hover:underline flex items-center gap-1 font-medium">Live Demo <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a>
                 </div>
@@ -209,20 +191,20 @@
             <h2 class="text-2xl font-bold text-royalBlue mb-2">Let's Build Something Great Together</h2>
             <p class="text-xs text-textMuted">Ready to upgrade your digital presence or integrate smart AI solutions into your business? Let's connect and make it happen.</p>
         </div>
-        <form class="p-6 rounded-2xl bg-cardLight border border-borderCol space-y-4 shadow-sm" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+        <form class="p-6 rounded-2xl bg-[#f8fafc] border border-borderCol space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
             <div class="grid md:grid-cols-2 gap-4">
                 <div>
                     <label class="block text-[11px] font-medium text-textMuted mb-1">Your Name</label>
-                    <input type="text" required class="w-full px-3 py-2.5 rounded-xl bg-bgWhite border border-borderCol text-xs text-textDark focus:border-royalBlue focus:outline-none transition">
+                    <input type="text" required class="w-full px-3 py-2.5 rounded-xl bg-white border border-borderCol text-xs text-textDark focus:border-royalBlue focus:outline-none transition">
                 </div>
                 <div>
                     <label class="block text-[11px] font-medium text-textMuted mb-1">Your Email</label>
-                    <input type="email" required class="w-full px-3 py-2.5 rounded-xl bg-bgWhite border border-borderCol text-xs text-textDark focus:border-royalBlue focus:outline-none transition">
+                    <input type="email" required class="w-full px-3 py-2.5 rounded-xl bg-white border border-borderCol text-xs text-textDark focus:border-royalBlue focus:outline-none transition">
                 </div>
             </div>
             <div>
                 <label class="block text-[11px] font-medium text-textMuted mb-1">Message</label>
-                <textarea rows="4" required class="w-full px-3 py-2.5 rounded-xl bg-bgWhite border border-borderCol text-xs text-textDark focus:border-royalBlue focus:outline-none transition"></textarea>
+                <textarea rows="4" required class="w-full px-3 py-2.5 rounded-xl bg-white border border-borderCol text-xs text-textDark focus:border-royalBlue focus:outline-none transition"></textarea>
             </div>
             <button type="submit" class="w-full py-3 rounded-xl text-xs font-semibold uppercase tracking-wider bg-royalBlue text-white hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
                 Send Message ⚡
@@ -231,7 +213,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-borderCol text-center text-xs text-textMuted bg-cardLight">
+    <footer class="py-8 px-6 border-t border-borderCol text-center text-xs text-textMuted bg-[#f8fafc]">
         <p>© 2026 Mahmood Rafiq. Built with cloud-first workflow on GitHub & Vercel. 🚀</p>
     </footer>
 
