@@ -28,7 +28,7 @@
 
     <!-- Header / Navbar -->
     <header class="fixed top-0 left-0 w-full z-50 bg-bgWhite/90 backdrop-blur-md border-b border-borderCol">
-        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="text-lg font-bold tracking-tight text-royalBlue flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-royalBlue"></span> Mahmood Rafiq
             </a>
@@ -44,38 +44,75 @@
         </div>
     </header>
 
-    <!-- Hero Section with Profile Picture & Title -->
-    <section class="pt-36 pb-20 px-6 max-w-5xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center gap-10">
-            <!-- Profile Image -->
-            <div class="shrink-0">
-                <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/yhfhao0lb886yorharjg" alt="Mahmood Rafiq" class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-xl border-2 border-royalBlue/20">
-            </div>
-            <!-- Intro Content -->
-            <div>
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-royalBlue border border-blue-200 mb-4">
+    <!-- Hero Section with Profile Picture & Double-Layered UI Mockup -->
+    <section class="pt-36 pb-24 px-6 max-w-6xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Info Content -->
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-royalBlue border border-blue-200 mb-6">
                     <span class="w-1.5 h-1.5 rounded-full bg-royalBlue animate-pulse"></span> Available for Projects
                 </div>
-                <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-royalBlue mb-4 leading-tight">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-royalBlue mb-6 leading-[1.15]">
                     Lightning-Fast Web Apps & AI-Integrated Solutions
                 </h1>
-                <p class="text-base text-textMuted leading-relaxed">
+                <p class="text-base text-textMuted leading-relaxed mb-8">
                     I help businesses scale with custom, high-performance web applications, seamless AI prompt integration, and lightning-fast cloud delivery. Built for speed, designed for conversions.
                 </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#projects" class="px-6 py-3 rounded-xl text-sm font-semibold bg-royalBlue text-white hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
+                        View My Work 🚀
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cardLight border border-borderCol hover:border-royalBlue text-textDark transition">
+                        Let's Talk 💬
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="flex flex-wrap items-center gap-4 mt-8">
-            <a href="#projects" class="px-6 py-3 rounded-xl text-sm font-semibold bg-royalBlue text-white hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">
-                View My Work 🚀
-            </a>
-            <a href="#contact" class="px-6 py-3 rounded-xl text-sm font-semibold bg-cardLight border border-borderCol hover:border-royalBlue text-textDark transition">
-                Let's Talk 💬
-            </a>
+
+            <!-- Right Side: Double-Layered Modern Cards & Profile Pic -->
+            <div class="lg:col-span-5 relative flex justify-center">
+                <!-- Decorative background blur / glow -->
+                <div class="absolute -inset-2 bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 rounded-3xl blur-xl"></div>
+                
+                <div class="relative w-full max-w-sm">
+                    <!-- Back Layer Page (Simulated Double Layer Effect) -->
+                    <div class="absolute top-4 -left-4 w-full h-full rounded-2xl bg-blue-50 border border-blue-200 shadow-sm transform -rotate-3 scale-[0.98] pointer-events-none"></div>
+                    
+                    <!-- Front Main Card -->
+                    <div class="relative bg-cardLight border border-borderCol rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+                        <!-- Profile Image & Header inside card -->
+                        <div class="flex items-center gap-4 mb-6">
+                            <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/yhfhao0lb886yorharjg" alt="Mahmood Rafiq" class="w-16 h-16 rounded-xl object-cover border-2 border-royalBlue/30 shadow-md">
+                            <div>
+                                <h3 class="font-bold text-textDark text-base">Mahmood Rafiq</h3>
+                                <p class="text-xs text-royalBlue font-medium">Full-Stack & AI Specialist</p>
+                            </div>
+                        </div>
+
+                        <!-- Mini Code / Tech Stack Snippet to enhance professional look -->
+                        <div class="bg-bgWhite rounded-xl p-4 border border-borderCol space-y-3 mb-6 text-xs text-textMuted font-mono">
+                            <div class="flex items-center justify-between text-[11px] text-gray-400 border-b border-borderCol pb-2">
+                                <span>workflow.config.js</span>
+                                <span class="flex items-center gap-1.5 text-emerald-600 font-sans"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Active</span>
+                            </div>
+                            <div class="space-y-1">
+                                <p><span class="text-royalBlue">stack:</span> ['GitHub', 'Vercel', 'Supabase'];</p>
+                                <p><span class="text-royalBlue">focus:</span> 'LLM RAG & Speed';</p>
+                            </div>
+                        </div>
+
+                        <!-- Status badge row -->
+                        <div class="flex items-center justify-between pt-2 border-t border-borderCol text-xs text-textMuted">
+                            <span>Cloud Architecture</span>
+                            <span class="font-semibold text-royalBlue">100% Uptime ⚡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-6 border-t border-borderCol max-w-5xl mx-auto">
+    <section id="about" class="py-20 px-6 border-t border-borderCol max-w-6xl mx-auto">
         <div class="grid md:grid-cols-3 gap-10 items-start">
             <div>
                 <h2 class="text-xl font-bold text-royalBlue mb-2">Who I Am</h2>
@@ -93,7 +130,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 px-6 border-t border-borderCol max-w-5xl mx-auto">
+    <section id="services" class="py-20 px-6 border-t border-borderCol max-w-6xl mx-auto">
         <div class="mb-12">
             <h2 class="text-xl font-bold text-royalBlue mb-2">What I Bring to the Table</h2>
             <p class="text-xs text-textMuted">Core Services & Expertise</p>
@@ -131,7 +168,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-6 border-t border-borderCol max-w-5xl mx-auto">
+    <section id="projects" class="py-20 px-6 border-t border-borderCol max-w-6xl mx-auto">
         <div class="mb-12">
             <h2 class="text-xl font-bold text-royalBlue mb-2">Featured Portfolio Projects</h2>
             <p class="text-xs text-textMuted">Recent Live Projects</p>
