@@ -44,7 +44,7 @@
         </div>
     </header>
 
-    <!-- Hero Section with Profile Picture & Double-Layered UI Mockup -->
+    <!-- Hero Section with Profile Picture & Double-Layered Background Pages -->
     <section class="pt-36 pb-24 px-6 max-w-6xl mx-auto">
         <div class="grid lg:grid-cols-12 gap-12 items-center">
             <!-- Left Info Content -->
@@ -68,42 +68,31 @@
                 </div>
             </div>
 
-            <!-- Right Side: Double-Layered Modern Cards & Profile Pic -->
-            <div class="lg:col-span-5 relative flex justify-center">
-                <!-- Decorative background blur / glow -->
-                <div class="absolute -inset-2 bg-gradient-to-tr from-blue-500/10 to-indigo-500/10 rounded-3xl blur-xl"></div>
+            <!-- Right Side: Profile Picture with Double-Layered Background Pages -->
+            <div class="lg:col-span-5 relative flex justify-center py-6">
+                <!-- Background Layer 2 (Back Page) -->
+                <div class="absolute top-0 right-4 w-72 h-80 bg-blue-100/70 border border-blue-200 rounded-3xl transform rotate-6 scale-95 pointer-events-none shadow-sm"></div>
                 
-                <div class="relative w-full max-w-sm">
-                    <!-- Back Layer Page (Simulated Double Layer Effect) -->
-                    <div class="absolute top-4 -left-4 w-full h-full rounded-2xl bg-blue-50 border border-blue-200 shadow-sm transform -rotate-3 scale-[0.98] pointer-events-none"></div>
-                    
-                    <!-- Front Main Card -->
-                    <div class="relative bg-cardLight border border-borderCol rounded-2xl p-6 shadow-xl backdrop-blur-sm">
-                        <!-- Profile Image & Header inside card -->
-                        <div class="flex items-center gap-4 mb-6">
-                            <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/yhfhao0lb886yorharjg" alt="Mahmood Rafiq" class="w-16 h-16 rounded-xl object-cover border-2 border-royalBlue/30 shadow-md">
-                            <div>
-                                <h3 class="font-bold text-textDark text-base">Mahmood Rafiq</h3>
-                                <p class="text-xs text-royalBlue font-medium">Full-Stack & AI Specialist</p>
-                            </div>
+                <!-- Background Layer 1 (Middle Page) -->
+                <div class="absolute top-3 right-0 w-72 h-80 bg-cardLight border border-borderCol rounded-3xl transform rotate-3 scale-[0.98] pointer-events-none shadow-md"></div>
+                
+                <!-- Foreground Main Card containing the Profile Picture -->
+                <div class="relative z-10 bg-bgWhite border border-borderCol rounded-3xl p-6 shadow-2xl w-72 text-center backdrop-blur-md">
+                    <div class="mb-4 relative inline-block">
+                        <img src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/yhfhao0lb886yorharjg" alt="Mahmood Rafiq" class="w-36 h-36 rounded-2xl object-cover shadow-lg border-2 border-royalBlue/30 mx-auto">
+                        <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full"></span>
+                    </div>
+                    <h3 class="font-bold text-textDark text-lg mb-1">Mahmood Rafiq</h3>
+                    <p class="text-xs text-royalBlue font-medium mb-4">Full-Stack & AI Specialist</p>
+                    <div class="pt-3 border-t border-borderCol flex justify-around text-xs text-textMuted">
+                        <div>
+                            <span class="block font-bold text-textDark">GitHub</span>
+                            <span>Cloud</span>
                         </div>
-
-                        <!-- Mini Code / Tech Stack Snippet to enhance professional look -->
-                        <div class="bg-bgWhite rounded-xl p-4 border border-borderCol space-y-3 mb-6 text-xs text-textMuted font-mono">
-                            <div class="flex items-center justify-between text-[11px] text-gray-400 border-b border-borderCol pb-2">
-                                <span>workflow.config.js</span>
-                                <span class="flex items-center gap-1.5 text-emerald-600 font-sans"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> Active</span>
-                            </div>
-                            <div class="space-y-1">
-                                <p><span class="text-royalBlue">stack:</span> ['GitHub', 'Vercel', 'Supabase'];</p>
-                                <p><span class="text-royalBlue">focus:</span> 'LLM RAG & Speed';</p>
-                            </div>
-                        </div>
-
-                        <!-- Status badge row -->
-                        <div class="flex items-center justify-between pt-2 border-t border-borderCol text-xs text-textMuted">
-                            <span>Cloud Architecture</span>
-                            <span class="font-semibold text-royalBlue">100% Uptime ⚡</span>
+                        <div class="border-r border-borderCol"></div>
+                        <div>
+                            <span class="block font-bold text-textDark">Vercel</span>
+                            <span>Deployed</span>
                         </div>
                     </div>
                 </div>
